@@ -25,3 +25,34 @@ This project scrapes product information from a website using Selenium WebDriver
 
    ```bash
    pip install selenium webdriver-manager pandas
+
+2. **Setup WebDriver**
+
+   Make sure you have Chrome installed. The `webdriver-manager` package will handle the installation of the ChromeDriver 
+   automatically.
+
+## Usage
+
+1. **Run the Main Script**
+
+   Execute the `main.py` script to start the scraping process:
+
+   ```bash
+   python main.py
+   ```
+   
+   This will:
+ - Set up the Selenium WebDriver.
+ - Navigate to the specified URL and perform a search.
+ - Scrape product details from the search results.
+ - Process the data and save it to a CSV file named `products.csv`.
+
+## Notes
+
+- Adjust the `sleep` times if you encounter issues with page loading.
+- Update XPath expressions in 'xpaths.py' if the website structure changes.
+- Ensure that you comply with the website's terms of service and robots.txt file when scraping data.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
